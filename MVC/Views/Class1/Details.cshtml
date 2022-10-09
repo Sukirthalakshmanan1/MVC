@@ -1,0 +1,35 @@
+﻿@model MVC.Models.Class1model
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Class1model</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Room_no)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Room_no)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.class_strength)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.class_strength)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Room_no }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
